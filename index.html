@@ -87,43 +87,12 @@
   .trust-card h4 { font-size:15px; font-weight:700; margin-bottom:6px; }
   .trust-card p { font-size:13px; color:var(--text-secondary); font-weight:300; line-height:1.75; }
 
-  .form-section { background:var(--surface); }
-  .form-wrap { max-width:660px; background:var(--white); border:1.5px solid var(--border); border-radius:18px; padding:44px 40px; margin-top:40px; box-shadow:0 4px 32px rgba(0,0,0,0.07); position:relative; overflow:hidden; }
-  .form-wrap::before { content:''; position:absolute; top:0; left:0; right:0; height:4px; background:linear-gradient(90deg,var(--accent),var(--accent-mid)); }
-  .form-title { font-size:20px; font-weight:800; margin-bottom:4px; }
-  .form-subtitle { font-size:13px; color:var(--text-muted); margin-bottom:30px; font-weight:300; }
-  .form-grid { display:grid; gap:20px; }
-  .form-group { display:flex; flex-direction:column; gap:7px; }
-  .form-row { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
-  label { font-size:13px; font-weight:600; color:var(--text-secondary); }
-  label .req { color:var(--accent); margin-left:2px; }
-  label .opt { color:var(--text-muted); font-weight:400; font-size:12px; margin-left:4px; }
-  select,input[type="text"],input[type="tel"],textarea { background:var(--bg); border:1.5px solid var(--border); border-radius:9px; color:var(--text-primary); font-family:'Noto Sans KR',sans-serif; font-size:14px; padding:12px 15px; outline:none; transition:border-color 0.2s,box-shadow 0.2s; width:100%; appearance:none; }
-  select:focus,input:focus,textarea:focus { border-color:var(--accent); box-shadow:0 0 0 3px rgba(26,86,219,0.1); background:var(--white); }
-  select { background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%239ca3af' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat:no-repeat; background-position:right 14px center; padding-right:36px; background-color:var(--bg); }
-  textarea { resize:vertical; min-height:88px; line-height:1.65; }
-  .checkbox-group { display:flex; flex-direction:column; gap:10px; }
-  .checkbox-item { display:flex; align-items:center; gap:10px; cursor:pointer; }
-  .checkbox-item input[type="checkbox"] { width:17px; height:17px; accent-color:var(--accent); cursor:pointer; flex-shrink:0; }
-  .checkbox-item span { font-size:14px; color:var(--text-primary); user-select:none; }
-  .days-grid { display:grid; grid-template-columns:repeat(5,1fr); gap:8px; }
-  .day-btn { background:var(--bg); border:1.5px solid var(--border); border-radius:8px; padding:10px 4px; text-align:center; font-size:13px; font-weight:600; cursor:pointer; transition:all 0.15s; color:var(--text-secondary); font-family:'Noto Sans KR',sans-serif; }
-  .day-btn.selected { background:var(--accent-light); border-color:var(--accent); color:var(--accent); }
-  .day-btn:hover:not(.selected) { border-color:#9ca3af; color:var(--text-primary); }
-  .form-divider { border:none; border-top:1px solid var(--border); margin:4px 0; }
-  .submit-btn { width:100%; background:var(--accent); color:#fff; font-weight:800; font-size:16px; padding:16px; border-radius:10px; border:none; cursor:pointer; transition:all 0.2s; margin-top:6px; font-family:'Noto Sans KR',sans-serif; box-shadow:0 4px 14px rgba(26,86,219,0.25); }
-  .submit-btn:hover { background:var(--accent-mid); transform:translateY(-1px); }
-  .form-disclaimer { font-size:11px; color:var(--text-muted); text-align:center; margin-top:14px; line-height:1.7; }
-
-  .modal-overlay { display:none; position:fixed; inset:0; z-index:200; background:rgba(0,0,0,0.35); backdrop-filter:blur(6px); align-items:center; justify-content:center; }
-  .modal-overlay.show { display:flex; }
-  .modal-box { background:var(--white); border:1px solid var(--border); border-radius:18px; padding:48px 40px; text-align:center; max-width:360px; width:90%; animation:popIn 0.3s ease; box-shadow:0 20px 60px rgba(0,0,0,0.15); }
-  @keyframes popIn { from{transform:scale(0.92);opacity:0} to{transform:scale(1);opacity:1} }
-  .modal-icon { font-size:48px; margin-bottom:16px; }
-  .modal-box h3 { font-size:20px; font-weight:800; margin-bottom:10px; }
-  .modal-box p { font-size:14px; color:var(--text-secondary); line-height:1.8; font-weight:300; }
-  .modal-close { margin-top:28px; background:var(--accent); color:#fff; border:none; padding:12px 32px; border-radius:8px; font-weight:700; font-size:14px; cursor:pointer; font-family:'Noto Sans KR',sans-serif; transition:background 0.2s; }
-  .modal-close:hover { background:var(--accent-mid); }
+  .cta-section { background:var(--accent); text-align:center; padding:80px 6vw; }
+  .cta-section h2 { font-size:clamp(26px,4vw,42px); font-weight:900; color:#fff; margin-bottom:12px; letter-spacing:-0.5px; }
+  .cta-section p { color:rgba(255,255,255,0.8); font-size:16px; font-weight:300; margin-bottom:36px; line-height:1.8; }
+  .cta-btn { display:inline-block; background:#fff; color:var(--accent); font-weight:800; font-size:17px; padding:18px 48px; border-radius:12px; text-decoration:none; transition:all 0.2s; box-shadow:0 4px 20px rgba(0,0,0,0.15); }
+  .cta-btn:hover { transform:translateY(-2px); box-shadow:0 8px 28px rgba(0,0,0,0.2); }
+  .cta-note { color:rgba(255,255,255,0.6); font-size:13px; margin-top:16px; }
 
   footer { background:var(--text-primary); color:rgba(255,255,255,0.5); padding:36px 6vw; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; }
   .footer-logo { font-weight:900; font-size:16px; color:#fff; }
@@ -133,10 +102,9 @@
   .reveal.visible { opacity:1; transform:translateY(0); }
 
   @media(max-width:600px) {
-    .form-row { grid-template-columns:1fr; }
-    .form-wrap { padding:28px 18px; }
     section { padding:60px 5vw; }
     .hero { padding:100px 5vw 60px; }
+    .cta-section { padding:60px 5vw; }
   }
 </style>
 </head>
@@ -144,10 +112,9 @@
 
 <nav>
   <div class="nav-logo">Profit<span>Care</span></div>
-  <a href="#form" class="nav-cta">무료 견적 신청</a>
+  <a href="https://naver.me/5YoiyUFh" target="_blank" class="nav-cta">네이버 폼 신청하기</a>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
   <div class="hero-bg"></div>
   <div class="hero-content">
@@ -162,13 +129,12 @@
       대표님의 든든한 환경 경영 파트너가 되어 드립니다.
     </p>
     <div class="hero-cta-wrap">
-      <a href="#form" class="btn-primary">📋 무료 견적 신청하기</a>
+      <a href="https://naver.me/5YoiyUFh" target="_blank" class="btn-primary">📋 네이버 폼 신청하기</a>
       <a href="#gallery" class="btn-ghost">관리 사례 보기</a>
     </div>
   </div>
 </section>
 
-<!-- VALUE -->
 <section class="value-section reveal">
   <div class="section-label">서비스 가치</div>
   <h2 class="section-title">오는 사람이<br>기분 좋은 공간을 만듭니다.</h2>
@@ -181,13 +147,13 @@
     </div>
     <div class="value-card">
       <div class="value-icon">🔍</div>
-      <h3>문제가 되는 부분을 먼저 찾습니다</h3>
-      <p>자주 사용하는 구역, 먼지가 쌓이는 곳, 얼룩이 지는 부분을 빠르게 캐치해서 집중 관리합니다.</p>
-    </div>
-    <div class="value-card">
-      <div class="value-icon">📅</div>
       <h3>청소도 루틴이 되어야 공간이 유지됩니다</h3>
       <p>한 번 잘 하는 것보다, 정해진 주기로 꾸준히 오는 게 더 중요합니다. 방문할 때마다 점검하고 관리하는 루틴을 만들어드립니다.</p>
+    </div>
+    <div class="value-card">
+      <div class="value-icon">📍</div>
+      <h3>문제가 되는 부분을 먼저 찾습니다</h3>
+      <p>자주 사용하는 구역, 먼지가 쌓이는 곳, 얼룩이 지는 부분을 빠르게 캐치해서 집중 관리합니다.</p>
     </div>
     <div class="value-card">
       <div class="value-icon">💬</div>
@@ -197,7 +163,6 @@
   </div>
 </section>
 
-<!-- GALLERY -->
 <section class="gallery-section reveal" id="gallery">
   <div class="section-label">관리 사례</div>
   <h2 class="section-title">직접 관리한<br>공간들입니다.</h2>
@@ -222,7 +187,6 @@
   </div>
 </section>
 
-<!-- TARGET -->
 <section class="target-section reveal">
   <div class="section-label">서비스 대상</div>
   <h2 class="section-title">이런 공간을<br>관리합니다.</h2>
@@ -235,7 +199,6 @@
   </div>
 </section>
 
-<!-- PROCESS -->
 <section class="process-section reveal" id="process">
   <div class="section-label">진행 순서</div>
   <h2 class="section-title">이렇게 시작됩니다.</h2>
@@ -260,116 +223,24 @@
   </div>
 </section>
 
-<!-- TRUST -->
 <section class="trust-section reveal">
   <div class="section-label">약속</div>
   <h2 class="section-title">프로핏케어가<br>지키는 것들</h2>
   <div class="trust-grid">
-    <div class="trust-card">
-      <div class="trust-icon">🏠</div>
-      <h4>내 사업장처럼 관리합니다</h4>
-      <p>형식적으로 닦고 끝내지 않습니다. 제 공간이라면 어떻게 할지 생각하며 관리합니다.</p>
-    </div>
-    <div class="trust-card">
-      <div class="trust-icon">🔍</div>
-      <h4>꼼꼼하게 확인합니다</h4>
-      <p>자주 놓치는 구석, 얼룩, 먼지 쌓임을 매 방문마다 체크하며 일정한 수준을 유지합니다.</p>
-    </div>
-    <div class="trust-card">
-      <div class="trust-icon">💰</div>
-      <h4>투명한 견적</h4>
-      <p>방문 후 확정된 금액 외에 추가 청구는 없습니다.</p>
-    </div>
-    <div class="trust-card">
-      <div class="trust-icon">📞</div>
-      <h4>빠른 응답</h4>
-      <p>문의 주시면 24시간 내 담당자가 직접 연락드립니다.</p>
-    </div>
+    <div class="trust-card"><div class="trust-icon">🏠</div><h4>내 사업장처럼 관리합니다</h4><p>형식적으로 닦고 끝내지 않습니다. 제 공간이라면 어떻게 할지 생각하며 관리합니다.</p></div>
+    <div class="trust-card"><div class="trust-icon">🔍</div><h4>꼼꼼하게 확인합니다</h4><p>자주 놓치는 구석, 얼룩, 먼지 쌓임을 매 방문마다 체크하며 일정한 수준을 유지합니다.</p></div>
+    <div class="trust-card"><div class="trust-icon">💰</div><h4>투명한 견적</h4><p>방문 후 확정된 금액 외에 추가 청구는 없습니다.</p></div>
+    <div class="trust-card"><div class="trust-icon">📞</div><h4>빠른 응답</h4><p>문의 주시면 24시간 내 담당자가 직접 연락드립니다.</p></div>
   </div>
 </section>
 
-<!-- FORM -->
-<section class="form-section reveal" id="form">
-  <div class="section-label">견적 신청</div>
-  <h2 class="section-title">지금 신청하시면<br>24시간 내 연락드립니다.</h2>
-  <p class="section-desc">아래 내용만 입력해주세요. 방문 견적은 무료이며, 부담 없이 시작할 수 있습니다.</p>
-  <div class="form-wrap">
-    <div class="form-title">무료 견적 신청서</div>
-    <div class="form-subtitle">작성 시간 약 1분 · 담당자 직접 연락</div>
-    <div class="form-grid">
-      <div class="form-group">
-        <label>업종 <span class="req">*</span></label>
-        <select id="bizType">
-          <option value="" disabled selected>업종을 선택해주세요</option>
-          <option>사무실</option>
-          <option>병원·의원·치과</option>
-          <option>학원</option>
-          <option>기타 업종 (직접 입력)</option>
-        </select>
-      </div>
-      <div class="form-group" id="bizTypeOther" style="display:none;">
-        <label>업종 직접 입력</label>
-        <input type="text" id="bizTypeText" placeholder="예: 카페, 네일샵, 편의점 등">
-      </div>
-      <div class="form-row">
-        <div class="form-group">
-          <label>공간 평수 <span class="req">*</span></label>
-          <select id="area">
-            <option value="" disabled selected>평수 선택</option>
-            <option>10평 이하</option>
-            <option>10~30평</option>
-            <option>30~50평</option>
-            <option>50~100평</option>
-            <option>100~200평</option>
-            <option>200~300평</option>
-            <option>300평 이상</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label>주 몇 회 원하시나요? <span class="req">*</span></label>
-          <div class="days-grid">
-            <button type="button" class="day-btn" onclick="selectDay(this)">1회</button>
-            <button type="button" class="day-btn" onclick="selectDay(this)">2회</button>
-            <button type="button" class="day-btn" onclick="selectDay(this)">3회</button>
-            <button type="button" class="day-btn" onclick="selectDay(this)">4회</button>
-            <button type="button" class="day-btn" onclick="selectDay(this)">5회</button>
-          </div>
-        </div>
-      </div>
-      <div class="form-group">
-        <label>청소 희망 구역 <span class="req">*</span> <span class="opt">(복수 선택 가능)</span></label>
-        <div class="checkbox-group">
-          <label class="checkbox-item"><input type="checkbox" value="전체"><span>🏢 전체 공간</span></label>
-          <label class="checkbox-item"><input type="checkbox" value="사무공간"><span>💼 사무 공간 (책상·바닥)</span></label>
-          <label class="checkbox-item"><input type="checkbox" value="화장실"><span>🚽 화장실</span></label>
-          <label class="checkbox-item"><input type="checkbox" value="주방"><span>🍽 주방·탕비실</span></label>
-          <label class="checkbox-item"><input type="checkbox" value="복도·계단"><span>🚪 복도·계단·현관</span></label>
-          <label class="checkbox-item"><input type="checkbox" value="유리·창문"><span>🪟 유리·창문</span></label>
-          <label class="checkbox-item"><input type="checkbox" value="방문 상담 후 결정"><span>🤝 방문 상담 후 결정</span></label>
-        </div>
-      </div>
-      <hr class="form-divider">
-      <div class="form-row">
-        <div class="form-group">
-          <label>연락처 <span class="req">*</span></label>
-          <input type="tel" id="phone" placeholder="010-0000-0000">
-        </div>
-        <div class="form-group">
-          <label>지역 <span class="req">*</span></label>
-          <input type="text" id="region" placeholder="예: 대전 서구">
-        </div>
-      </div>
-      <div class="form-group">
-        <label>추가 요청사항 <span class="opt">(선택)</span></label>
-        <textarea id="note" placeholder="원하시는 방문 시간대, 특이사항, 기타 문의를 자유롭게 적어주세요."></textarea>
-      </div>
-      <button class="submit-btn" onclick="submitForm()">📋 무료 견적 신청하기</button>
-      <p class="form-disclaimer">입력하신 정보는 견적 안내 목적으로만 사용되며 제3자에게 제공되지 않습니다.</p>
-    </div>
-  </div>
+<section class="cta-section reveal" id="form">
+  <h2>지금 신청하시면<br>24시간 내 연락드립니다.</h2>
+  <p>방문 견적은 무료입니다. 부담 없이 시작하세요.</p>
+  <a href="https://naver.me/5YoiyUFh" target="_blank" class="cta-btn">📋 네이버 폼 신청하기</a>
+  <p class="cta-note">입력하신 정보는 견적 안내 목적으로만 사용됩니다.</p>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <div>
     <div class="footer-logo">ProfitCare</div>
@@ -381,41 +252,7 @@
   </div>
 </footer>
 
-<!-- MODAL -->
-<div class="modal-overlay" id="modal">
-  <div class="modal-box">
-    <div class="modal-icon">✅</div>
-    <h3>신청이 완료됐습니다!</h3>
-    <p>입력하신 내용을 확인 후<br><strong>24시간 내</strong>에 담당자가 직접 연락드리겠습니다.<br><br>감사합니다 🙏</p>
-    <button class="modal-close" onclick="closeModal()">확인</button>
-  </div>
-</div>
-
 <script>
-  function selectDay(btn) {
-    document.querySelectorAll('.day-btn').forEach(b => b.classList.remove('selected'));
-    btn.classList.add('selected');
-  }
-  document.getElementById('bizType').addEventListener('change', function() {
-    document.getElementById('bizTypeOther').style.display =
-      this.value === '기타 업종 (직접 입력)' ? 'flex' : 'none';
-  });
-  function submitForm() {
-    const bizType = document.getElementById('bizType').value;
-    const area = document.getElementById('area').value;
-    const daySelected = document.querySelector('.day-btn.selected');
-    const zones = [...document.querySelectorAll('.checkbox-group input:checked')];
-    const phone = document.getElementById('phone').value.trim();
-    const region = document.getElementById('region').value.trim();
-    if (!bizType) return alert('업종을 선택해주세요.');
-    if (!area) return alert('공간 평수를 선택해주세요.');
-    if (!daySelected) return alert('희망 청소 횟수를 선택해주세요.');
-    if (zones.length === 0) return alert('청소 희망 구역을 선택해주세요.');
-    if (!phone) return alert('연락처를 입력해주세요.');
-    if (!region) return alert('지역을 입력해주세요.');
-    document.getElementById('modal').classList.add('show');
-  }
-  function closeModal() { document.getElementById('modal').classList.remove('show'); }
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
   }, { threshold: 0.1 });
